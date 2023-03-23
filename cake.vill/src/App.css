@@ -1,0 +1,54 @@
+nav {
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width:100%;
+  background-color: #000000;
+}
+
+.nav-logo img {
+  margin-left: 20px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.carrito {
+  width: 70px;
+  position: fixed;
+  left: 90%;
+  top: 11vh;
+}
+
+.carrito:hover{
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  left: 20%;
+  align-items: center;
+  top: 50px;
+  height: 90vh;
+}
+
+.container h2 {
+  font-size: 40px;
+}
