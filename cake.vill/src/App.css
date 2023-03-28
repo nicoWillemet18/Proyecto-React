@@ -21,7 +21,10 @@ nav {
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 20px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -29,11 +32,19 @@ nav {
   color: #ffffff;
 }
 
+.divCarrito {
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+  align-items: center;
+  
+}
+
 .carrito {
-  width: 70px;
-  position: fixed;
-  left: 90%;
-  top: 11vh;
+  margin-right: 5px;
+  width: 50px;
+  border-radius: 5px;
+  
 }
 
 .carrito:hover{

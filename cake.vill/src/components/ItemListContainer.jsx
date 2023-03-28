@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from "reactstrap";
 
-function Ilc (props) {
+function ItemListContainer (props) {
     return (
         <Container className="container-fluid">
             <h2>Bienvenidos a {props.nombre}👋🏼</h2>
@@ -10,4 +10,4 @@ function Ilc (props) {
     )
 }
 
-export default Ilc
+export default ItemListContainer
