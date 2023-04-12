@@ -1,12 +1,11 @@
-nav {
-  top: 0;
-  position: fixed;
+.navbar {
+  background-color: black;
+  color: aliceblue;
+}
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  width:100%;
-  background-color: #000000;
+  
 }
 
 .nav-logo img {
@@ -37,7 +36,6 @@ nav {
   justify-content: space-between;
   color: aliceblue;
   align-items: center;
-  
 }
 
 .carrito {
@@ -49,17 +47,4 @@ nav {
 
 .carrito:hover{
   cursor: pointer;
-}
-
-.container {
-  position: relative;
-  display: flex;
-  left: 20%;
-  align-items: center;
-  top: 50px;
-  height: 90vh;
-}
-
-.container h2 {
-  font-size: 40px;
 }

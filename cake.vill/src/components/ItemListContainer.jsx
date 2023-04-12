@@ -1,13 +1,28 @@
-import React from 'react'
-import { Container } from "reactstrap";
+import { useEffect, useState } from "react"
+import { mockFetch } from "../utils/mockFetch"
+import { Link, useParams } from "react-router-dom"
+import ItemList from "./ItemList"
 
-function ItemListContainer (props) {
+const ItemListContainer = () => {
+    const [productos, setProductos] = useState([])
+    const {pid}=useParams
+
+    useEffect(()=>{
+        mockFetch(pid)        
+            .then(resp => setProductos(resp))        
+    }, []) 
+
     return (
-        <Container className="container-fluid">
-            <h2>Bienvenidos a {props.nombre}👋🏼</h2>
-            
-        </Container>
+        <>
+            <div>
+            { 
+                productos.length !== 0 ? 
+                    <ItemList productos={productos} />
+                :
+                    <h2>Cargando...</h2>
+            }
+        </div>
+        </>
     )
 }
-
 export default ItemListContainer
