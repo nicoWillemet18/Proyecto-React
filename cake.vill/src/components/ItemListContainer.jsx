@@ -7,14 +7,13 @@ import ItemList from "./ItemList"
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const {cid} = useParams ()
-    console.log(cid)
 
     useEffect(()=>{
 
         if(cid){
             mockFetch()        
                 .then(resp => setProductos(resp.filter(prod => prod.categoria === cid)))
-                .catch(err => console.log (err))     
+                .catch(err => console.log (err))
         } else{
             mockFetch()        
             .then(resp => setProductos(resp))

@@ -9,8 +9,8 @@ const NavBar = () => {
             <Container className="nav">
                 <Link to={'/'}><img src="/imagenes/logo.jpg" alt="" /></Link>
                 <Nav className="nav">
-                    <Link to={'/categoria/premium'}>Premium</Link>
-                    <Link to={'/categoria/regular'}>Regular</Link>
+                    <Link to={'/categoria/Premium'}>Premium</Link>
+                    <Link to={'/categoria/Regular'}>Regular</Link>
                 </Nav>
                 <Nav>
                     3
