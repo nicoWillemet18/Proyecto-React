@@ -8,9 +8,9 @@ const NavBar = () => {
     <Navbar className="navbar" expand="lg" variant="dark">
             <Container className="nav">
                 <Link to={'/'}><img src="/imagenes/logo.jpg" alt="" /></Link>
-                <Nav>
-                    <Link to={'/'}>Premium</Link>
-                    <Link to={'/'}>Regular</Link>
+                <Nav className="nav">
+                    <Link to={'/categoria/premium'}>Premium</Link>
+                    <Link to={'/categoria/regular'}>Regular</Link>
                 </Nav>
                 <Nav>
                     3

@@ -5,10 +5,10 @@ import ItemDetail from "./ItemDetail";
 
 const   ItemDetailContainer = () => {
     const [productos, setProduct] = useState ({})
-    const {id} = useParams()
+    const {pid} = useParams()
 
     useEffect(()=> {
-        mockFetch(id)
+        mockFetch(pid)
         .then(resp =>setProduct(resp))
         .catch((err)=> console.log(err))
     }, [])

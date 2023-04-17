@@ -1,16 +1,27 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 import { mockFetch } from "../utils/mockFetch"
-import { Link, useParams } from "react-router-dom"
 import ItemList from "./ItemList"
+
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
-    const {pid}=useParams
+    const {cid} = useParams ()
+    console.log(cid)
 
     useEffect(()=>{
-        mockFetch(pid)        
-            .then(resp => setProductos(resp))        
-    }, []) 
+
+        if(cid){
+            mockFetch()        
+                .then(resp => setProductos(resp.filter(prod => prod.categoria === cid)))
+                .catch(err => console.log (err))     
+        } else{
+            mockFetch()        
+            .then(resp => setProductos(resp))
+            .catch(err => console.log (err)) 
+        }
+
+    }, [cid]) 
 
     return (
         <>
