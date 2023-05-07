@@ -1,0 +1,18 @@
+.card {
+    box-shadow: 1px 20px 20px black;
+}
+
+.card-body {
+    background-color: rgba(224, 232, 248, 0.932);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,9 +1,10 @@
-import Item from "./Item"
+import Item from "../Item/Item"
 
 
 const ItemList = ({productos}) => {
     const objStyle = {
         display: 'flex',
+        justifyContent: 'center',
         flexDirection: 'row',
         flexWrap: 'wrap',
     }

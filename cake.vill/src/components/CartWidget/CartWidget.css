@@ -1,0 +1,19 @@
+.divCarrito {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center;
+  }
+
+  .carrito {
+    margin-right: 5px;
+    width: 50px;
+    border-radius: 5px;
+    
+  }
+  
+  .carrito:hover{
+    cursor: pointer;
+  }
+
+  

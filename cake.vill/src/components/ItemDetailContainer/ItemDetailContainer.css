@@ -1,0 +1,8 @@
+.backg1 {
+    background-image: url("/public/imagenes/background1.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}

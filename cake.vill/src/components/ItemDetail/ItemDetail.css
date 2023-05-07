@@ -1,0 +1,11 @@
+.card {
+    margin: auto;
+    top: 100px;
+}
+
+.card-fo {
+    background-color: rgba(213, 220, 235, 0.932);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
