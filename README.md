@@ -1,0 +1,2 @@
+# Proyecto-React
+Cake Vill es una página de ventas de tortas y tartas, donde los clientes pueden navegar en un menú, filtrar los productos por categorías y ver el detalle de cada uno de ellos. Puede elegir los productos deseados y agregarlos al carrito de compras donde visualizará la cantidad total de productos agregados, el precio total y manipular la cantidad de productos desde el mismo carrito de compras.🎂 
